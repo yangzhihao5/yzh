@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 传统es5
+        // function point(x,y){
+        //     this.x=y;
+        //     this.y=y
+        // }
+        // point.prototype.toString=function(){
+        //     return '('+this.x+','+this.y+')'
+        // }
+        // var p = new point(1,2)
+        // let result = p.toString()
+        // console.log(result);
+        // console.log(p.toString());
+
+        // class es6
+        // class point{
+        //     constructor(x,y){
+        //         this.x=x;
+        //         this.y=y
+        //     }
+        //     toString(){
+        //         return '('+this.x+','+this.y+')'
+        //     }
+        // }
+
+        // let p = new point(1,2)
+        // let result = p.toString()
+
+        // console.log(result);
+        // console.log(p.toString());
+
+        // function point(x,y){
+        //     this.x=y;
+        //     this.y=y
+        // }
+        // point.prototype.toString=function(){
+        //     return '('+this.x+','+this.y+')'
+        // }
+        // var p = new point(1,2)
+        // let result = p.toString()
+        // console.log(result);
+        // console.log(p.toString());
+
+        // class es6
+        // class point{
+        //     constructor(x,y){
+        //         this.x=x;
+        //         this.y=y
+        //     }
+        //     toString(){
+        //         return '('+this.x+','+this.y+')'
+        //     }
+        // }
+
+        // let p = new point(1,2)
+        // let result = p.toString()
+
+        // console.log(result);
+        // console.log(p.toString());
+
+
+        // function point(x,y){
+        //     this.x=y;
+        //     this.y=y
+        // }
+        // point.prototype.toString=function(){
+        //     return '('+this.x+','+this.y+')'
+        // }
+        // var p = new point(1,2)
+        // let result = p.toString()
+        // console.log(result);
+        // console.log(p.toString());
+
+        // class es6
+        // class point{
+        //     constructor(x,y){
+        //         this.x=x;
+        //         this.y=y
+        //     }
+        //     toString(){
+        //         return '('+this.x+','+this.y+')'
+        //     }
+        // }
+
+        // let p = new point(1,2)
+        // let result = p.toString()
+
+        // console.log(result);
+        // console.log(p.toString());
+    </script>
+
+    <script>
+        // es5的写法,构造函数
+        // function phone(brand,price){
+        //     this.brand =brand,
+        //     this.price = price
+        // }
+        // phone.prototype.call=function(){
+        //     console.log('可以');
+        // }
+        // phone.prototype.info = function(){
+        //     return '(我手机'+this.brand+',价格'+this.y+')'
+        // }
+        // let p = new phone('aaa','bbb')
+
+        // class phone{
+        //     constructor(){
+        //         this.brand =brand,
+        //     this.price = price
+        //     }
+        //     call(){
+        //         console.log('111');
+        //     }
+        //     info(){
+        //         return '(我手机'+this.brand+',价格'+this.y+')'
+        //     }
+        // }
+        // let n=new phone('aaa','bbb')
+        // console.log(n);
+
+
+         // function phone(brand,price){
+        //     this.brand =brand,
+        //     this.price = price
+        // }
+        // phone.prototype.call=function(){
+        //     console.log('可以');
+        // }
+        // phone.prototype.info = function(){
+        //     return '(我手机'+this.brand+',价格'+this.y+')'
+        // }
+        // let p = new phone('aaa','bbb')
+
+        // class phone{
+        //     constructor(){
+        //         this.brand =brand,
+        //     this.price = price
+        //     }
+        //     call(){
+        //         console.log('111');
+        //     }
+        //     info(){
+        //         return '(我手机'+this.brand+',价格'+this.y+')'
+        //     }
+        // }
+        // let n=new phone('aaa','bbb')
+        // console.log(n);
+
+
+
+         // function phone(brand,price){
+        //     this.brand =brand,
+        //     this.price = price
+        // }
+        // phone.prototype.call=function(){
+        //     console.log('可以');
+        // }
+        // phone.prototype.info = function(){
+        //     return '(我手机'+this.brand+',价格'+this.y+')'
+        // }
+        // let p = new phone('aaa','bbb')
+
+        // class phone{
+        //     constructor(){
+        //         this.brand =brand,
+        //     this.price = price
+        //     }
+        //     call(){
+        //         console.log('111');
+        //     }
+        //     info(){
+        //         return '(我手机'+this.brand+',价格'+this.y+')'
+        //     }
+        // }
+        // let n=new phone('aaa','bbb')
+        // console.log(n);
+        
+    </script>
+
+    <script>
+        // function phone(brand,price){
+        //     this.brand = brand;
+        //     this.price = price
+        // }
+        // phone.prototype.call=function(){
+        //     console.log('我可以打电话');
+        // }
+
+        // function Smartphone(brand,price,color,size){
+        //     phone.call(this,brand,price)
+        //     this.color=color
+        //     this.size= size
+        // }
+
+        // Smartphone.prototype = new phone;
+        // Smartphone.prototype.constructor = Smartphone;
+
+        // Smartphone.prototype.photo =function(){
+        //     console.log('拍照');
+        // }
+        // Smartphone.prototype.playgame =function(){
+        //     console.log('玩游戏');
+        // }
+        // const yzh=new Smartphone('11','22','33','44')
+        // console.log(yzh);
+
+        // function phone(brand,price){
+        //     this.brand = brand;
+        //     this.price = price
+        // }
+        // phone.prototype.call=function(){
+        //     console.log('111');
+        // }
+
+        // function Smartphone(brand,price,color,size){
+        //     phone.call(this,brand,price)
+        //     this.color=color
+        //     this.size = size
+        // }
+        // Smartphone.prototype = new phone;
+        // Smartphone.prototype.constructor = Smartphone;
+
+        // Smartphone.prototype.phone = function(){
+        //     console.log('拍照');
+        // }
+
+        // Smartphone.prototype.playgema = function (){
+        //     console.log('游戏');
+        // }
+        // const yzh = new Smartphone('11','22','33','44')
+        // console.log(yzh);
+
+         // function phone(brand,price){
+        //     this.brand = brand;
+        //     this.price = price
+        // }
+        // phone.prototype.call=function(){
+        //     console.log('111');
+        // }
+
+        // function Smartphone(brand,price,color,size){
+        //     phone.call(this,brand,price)
+        //     this.color=color
+        //     this.size = size
+        // }
+        // Smartphone.prototype = new phone;
+        // Smartphone.prototype.constructor = Smartphone;
+
+        // Smartphone.prototype.phone = function(){
+        //     console.log('拍照');
+        // }
+
+        // Smartphone.prototype.playgema = function (){
+        //     console.log('游戏');
+        // }
+        // const yzh = new Smartphone('11','22','33','44')
+        // console.log(yzh);
+    </script>
+
+    <script>
+// function equal(a,b){
+//     if(math.abs(a-b)<Number.EPSILON){
+//         return true
+//     }else{
+//         return false
+//     }
+// }
+
+//         let a = 0B1010
+//         let b=0o777
+
+//         let c=100
+//         let x=0xff
+//         console.log(x);
+
+//         console.log(Number.isFinite(100));
+//         console.log(Number.isFinite(100/0));
+//         console.log(Number.isFinite(Infinity));
+
+//         console.log(Number.isNaN(123));
+
+    // function equal(a,b){
+    //     if(math.abs(a-b)<Number.EPSILON){
+    //         return true
+    //     }else{
+    //         return false
+    //     }
+    // }
+
+    // let a = 0B1010;
+    // let b=0o777;
+
+    // let c=100;
+    // let x=0xff;
+    // console.log(x);
+
+    // console.log(Number.isFinite(100));
+    // console.log(Number.isFinite(100/0));
+    // console.log(Number.isFinite(Infinity));
+
+    // console.log(Number.isNaN(123));
+
+    // function equal(a,b){
+    //     if(math.abs(a-b)<Number.EPSILON){
+    //         return true
+    //     }else{
+    //         return false
+    //     }
+    // }
+
+    // let c=100;
+    // let x=0xff;
+    // console.log(x);
+
+    // console.log(Number.isFinite(100));
+    // console.log(Number.isFinite(100/0));
+    // console.log(Number.isFinite(Infinity));
+
+    // console.log(Number.isNaN(1232));
+    </script>
+
+    <script>
+        // const proto ={
+        //     foo:'hel'
+        // }
+
+        // const obj = {
+        //     foo:'world',
+        //     find(){
+        //         return super.foo;
+        //     }
+        // }
+
+        // Object.setPrototypeOf(obj,proto)
+        // console.log(obj.find());
+        // obj.find()
+
+        // const proto ={
+        //     foo:'hel'
+        // }
+        // const obj ={
+        //     foo:'world',
+        //     find(){
+        //         return super.foo;
+        //     }
+        // }
+        // Object.setPrototypeOf(obj,proto)
+        // console.log(obj.find());
+        // obj.find()
+
+        // const proto={
+        //     foo:'hel'
+        // }
+        // const obj ={
+        //     foo:'world',
+        //     find(){
+        //         return super.foo
+        //     }
+        // }
+        // Object.setPrototypeOf(obj,proto)
+        // console.log(obj.find());
+        // obj.find()
+    </script>
+
+    <script>
+        // let obj1 = new Proxy({},{
+        //     get:function(tar,key,receiver){
+        //         console.log(`huoqu ${key}!`);
+        //         return Reflect.get(target,key,receiver)
+        //     },
+        //     set:function(target,key,receiver,value){
+        //         // console.log(target);
+        //         // console.log(key);
+        //         // console.log(value);
+        //         // console.log(receiver);
+        //         console.log(`shezhi${key}`);
+        //         return Reflect.get(target,key,receiver)
+
+        //     }
+        // })
+        // obj1.count = 1
+        // ++obj1.count
+        // console.log(obj1);
+    </script>
+
+    <script>
+        // let obj1 = new Proxy({},{
+        //     get:function(tar,key,receiver){
+        //         console.log(`获取 ${key}!`);
+        //         return Reflect.get(target,key,receiver)
+        //     },
+        //     set:function(target,key,receiver,value){
+        //         // console.log(target);
+        //         // console.log(key);
+        //         // console.log(value);
+        //         // console.log(receiver);
+        //         // console.log(`设置 ${key}`);
+        //         return Reflect.get(target,key,receiver)
+
+        //     }
+            
+        // })
+        // obj1.count = 1
+        // ++obj1.count
+        // console.log(obj1);
+
+        // let obj1 = new Proxy({},{
+        //     get:function(tar,key,receiver){
+        //         console.log(`获取${key}!`);
+        //         return Reflect.get(target,key,receiver)
+        //     },
+        //     set:function(target,key,receiver,value){
+        //         console.log(target);
+        //         console.log(receiver);
+        //         console.log(receiver);
+        //         console.log(value);
+        //         console.log(`设置 ${key}`);
+        //         return Reflect.get(target,key,receiver)
+        //     }
+        // })
+        // obj.count = 1
+        // ++obj1.count
+        // console.log(obj1);
+    </script>
+</body>
+</html>
